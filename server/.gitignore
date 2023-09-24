@@ -1,0 +1,13 @@
+# node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+#Editors
+.vs/
+.bundle/
+.gitlab/
+
+#OS
+.DS_Store
