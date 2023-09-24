@@ -1,6 +1,7 @@
 import express, {Request, Response} from "express";
 import connectToStorage from "./db";
 import userRoutes from "./routes/userRoutes";
+import categoryRoutes from "./routes/categoryRoutes";
 
 const app = express();
 app.use(express.json());
@@ -16,6 +17,7 @@ app.get('/ping', (request: Request, response: Response) => {
 
 
 app.use('/user', userRoutes);
+app.use('/category', categoryRoutes);
 
 app.listen(PORT, () => {
     console.log(`AppSuccess: Server running on on ${PORT}`);
